@@ -65,6 +65,14 @@ Checkbox.defaultProps = {
 };
 
 Checkbox.propTypes = {
+  checked: PropTypes.bool.isRequired,
+  iconUnchecked: PropTypes.string.isRequired,
+  iconChecked: PropTypes.string.isRequired,
+  iconColor: PropTypes.string.isRequired,
+  iconSize: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
+  textSize: PropTypes.number.isRequired,
+  onChange: PropTypes.func,
 }
 
 export default Checkbox;
