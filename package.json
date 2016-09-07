@@ -1,7 +1,8 @@
 {
   "name": "ReactNative-checkbox",
   "version": "1.0.0",
-  "description": "Checkbox component for React Native",
+  "description": "Checkbox and Checkbox List Components for React Native",
+  "author": "Hubert Jaruzal <hubertjaruzal@gmail.com>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,8 +20,6 @@
     "Native",
     "Checkbox"
   ],
-  "author": "Hubert Jaruzal",
-  "license": "ISC",
   "dependencies": {
     "react-native-vector-icons": "^2.1.0"
   }

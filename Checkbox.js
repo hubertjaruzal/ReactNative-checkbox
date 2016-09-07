@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Text, Image, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, Image, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 class Checkbox extends Component {
@@ -24,12 +24,12 @@ class Checkbox extends Component {
   render() {
     const icon = () => this.state.checked ? this.props.iconChecked : this.props.iconUnchecked;
     return (
-      <TouchableOpacity style={styles.checkbox} onPress={() => this.onChange()}>
+      <TouchableOpacity style={[this.props.checkboxStyles]} onPress={() => this.onChange()}>
         <Icon
           name={icon()}
           size={this.props.iconSize}
           color={this.props.iconColor}
-          style={styles.icon} />
+          style={[this.props.iconStyles]} />
         <Text
           style={{
             fontSize: this.props.textSize
@@ -42,18 +42,6 @@ class Checkbox extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  checkbox: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  icon: {
-    marginRight: 5
-  }
-});
-
 Checkbox.defaultProps = {
   checked: false,
   iconUnchecked: "radio-button-unchecked",
@@ -61,7 +49,15 @@ Checkbox.defaultProps = {
   iconColor: "#000000",
   iconSize: 20,
   text: "Checkbox",
-  textSize: 15
+  textSize: 15,
+  checkboxStyles: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center'
+  },
+  iconStyles: {
+    marginRight: 5
+  },
 };
 
 Checkbox.propTypes = {
@@ -73,6 +69,8 @@ Checkbox.propTypes = {
   text: PropTypes.string.isRequired,
   textSize: PropTypes.number.isRequired,
   onChange: PropTypes.func,
+  checkboxStyles: PropTypes.object,
+  iconStyles: PropTypes.object,
 }
 
 export default Checkbox;
