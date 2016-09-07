@@ -3,7 +3,7 @@ Checkbox and Checkbox List Components for React Native
 
 # Installation
 ```bash
-npm i reactNative-checkbox --save
+npm i ReactNative-checkbox --save
 ```
 
 #Props:
