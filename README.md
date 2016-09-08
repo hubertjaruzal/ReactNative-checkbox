@@ -1,10 +1,30 @@
 # ReactNative-checkbox
-Checkbox and Checkbox List Components for React Native
+Checkbox and Checkbox List Components for React Native which uses https://github.com/oblador/react-native-vector-icons
 
 # Installation
 ```bash
 npm i ReactNative-checkbox --save
 ```
+
+### iOS
+
+- Browse to `node_modules/react-native-vector-icons` and drag the folder Fonts (or just the ones you want) to your project in Xcode.
+
+- Edit Info.plist and add:
+
+`
+<key>UIAppFonts</key>
+<array>
+  <string>Entypo.ttf</string>
+  <string>EvilIcons.ttf</string>
+  <string>FontAwesome.ttf</string>
+  <string>Foundation.ttf</string>
+  <string>Ionicons.ttf</string>
+  <string>MaterialIcons.ttf</string>
+  <string>Octicons.ttf</string>
+  <string>Zocial.ttf</string>
+</array>
+`
 
 #Props:
 

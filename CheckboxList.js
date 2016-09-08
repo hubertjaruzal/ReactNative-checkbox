@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ListView } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import Checkbox from './index.js';
+import Checkbox from './Checkbox.js';
 
 class CheckboxList extends Component {
   constructor(props) {
