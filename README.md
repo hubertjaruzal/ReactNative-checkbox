@@ -12,7 +12,7 @@ npm i ReactNative-checkbox --save
 
 - Edit Info.plist and add:
 
-`
+```jsx
 <key>UIAppFonts</key>
 <array>
   <string>Entypo.ttf</string>
@@ -24,7 +24,7 @@ npm i ReactNative-checkbox --save
   <string>Octicons.ttf</string>
   <string>Zocial.ttf</string>
 </array>
-`
+```
 
 #Props:
 
