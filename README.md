@@ -26,6 +26,34 @@ npm i ReactNative-checkbox --save
 </array>
 ```
 
+# Usage:
+
+### Checkbox
+`import Checkbox from 'ReactNative-checkbox';`
+
+```jsx
+render() {
+  return (
+    <View style={styles.container}>
+      <Checkbox />
+    </View>
+  );
+}
+```
+
+### CheckboxList
+`import CheckboxList from 'ReactNative-checkbox/CheckboxList';`
+
+```jsx
+render() {
+  return (
+    <View style={styles.container}>
+      <CheckboxList />
+    </View>
+  );
+}
+```
+
 #Props:
 
 ### Checkbox
