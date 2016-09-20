@@ -1,5 +1,5 @@
 # ReactNative-checkbox
-Checkbox and Checkbox List Components for React Native which uses https://github.com/oblador/react-native-vector-icons
+Checkbox and CheckboxList Components for React Native. Components uses MaterialIcons from https://github.com/oblador/react-native-vector-icons.
 
 # Installation
 ```bash
@@ -29,17 +29,32 @@ npm i ReactNative-checkbox --save
 # Usage:
 
 ### Checkbox
-`import Checkbox from 'ReactNative-checkbox';`
+`import {Checkbox, CheckboxList } from 'ReactNative-checkbox';`
 
 ```jsx
 render() {
+  const Items = [
+    {name: 'Item1', done: true},
+    {name: 'Item2', done: true},
+    {name: 'Item4', done: false}
+  ];
+
   return (
     <View style={styles.container}>
-      <Checkbox />
+      <CheckboxList
+        data={Items}
+        checked='done'
+        iconColor='#4078c0'
+        iconChecked='check-box'
+        iconUnchecked='check-box-outline-blank'
+      />
     </View>
   );
 }
 ```
+
+# Example
+![](http://i.imgur.com/niRpbk6.gif)
 
 ### CheckboxList
 `import CheckboxList from 'ReactNative-checkbox/CheckboxList';`
