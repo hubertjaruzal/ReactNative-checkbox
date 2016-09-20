@@ -1,6 +1,6 @@
 {
   "name": "ReactNative-checkbox",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Checkbox and Checkbox List Components for React Native",
   "author": "Hubert Jaruzal <hubertjaruzal@gmail.com>",
   "main": "index.js",
